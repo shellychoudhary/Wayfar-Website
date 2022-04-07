@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="../styles/style.css" />
+    <title>WayFar</title>
+  </head>
+  <body>
+    <!--Navigation-->
+    <div class="navheader">
+      <div class="navbar">
+        <div class="navright">
+          <a href="#" class="logo">WayFar</a>
+        </div>
+
+        <div>
+          <ul>
+            <li class="navItem"><a href="../html/home.html">Home</a></li>
+            <li class="navItem"><a href="../html/populardestination.html">Popular Destinations</a></li>
+            <li class="navItem"><a href="../html/tourpackages.html">Tour Packages</a></li>
+            <li class="navItem"><a href="../html/offer.html">Offers</a></li>
+            <li class="navItem"><a href="../html/enquire.html">Enquire Us</a></li>
+            <li class="navItem"><a href="../html/gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--slider-->
+    <div class="slider-container">
+      <div class="myslide fade">
+        <img src="../images/slider1.jpg" class="slider-img" />
+        <div class="caption"><h1>Red Rocks, Arizona</h1></div>
+      </div>
+
+      <div class="myslide fade">
+        <img src="../images/slider2.webp" class="slider-img" />
+        <div class="caption"><h1>Festival of Lights, France</h1></div>
+      </div>
+
+      <div class="myslide fade">
+        <img src="../images/slider3.webp" class="slider-img" />
+        <div class="caption"><h1>Miami Beach, Florida</h1></div>
+      </div>
+
+      <div class="myslide fade">
+        <img src="../images/slider4.jpg" class="slider-img" />
+        <div class="caption"><h1>Golden Gate, United States</h1></div>
+      </div>
+
+      <div class="myslide fade">
+        <img src="../images/slider5.jpg" class="slider-img" />
+        <div class="caption"><h1>United Arab Emirates</h1></div>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("myslide");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].className = slides[i].className.replace("active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].className += "active";
+        setTimeout(showSlides, 3000);
+      }
+    </script>
+
+    <!--Jumbotron-->
+    <div class="jumbotron">
+      <div class="jumbotron-head">
+        <h2>Offers, Packages and More</h2>
+      </div>
+
+      <div class="jumbo-img-container">
+        <div class="jumbo-container">
+          <img src="../images/jumbotron1.jpg" class="jumbotron-img" />
+          <div class="hide text">
+            <div>
+            <h2><a href="./offer.html">Offers</a></h2>
+            <p>We have the best offers across the world and we never compromise with the quality.</p>
+          </div>
+          </div>
+          <div class="jumbo-text">
+            <p>See the exclusive deals</p>
+          </div>
+        </div>
+        
+
+        <div class="jumbo-container">
+          <img src="../images/jumbotron2.jpg" class="jumbotron-img" />
+          <div class="hide  text1">
+            <div>
+            <h2><a href="./populardestination.html">Trips</a></h2>
+            <p>See our popular destinations and book your slot. Don't miss the chance to be part of your trip.</p>
+          </div>
+          </div>
+          <div class="jumbo-text">
+            <p>Get a chance to be a part of our trip</p>
+          </div>
+        </div>
+
+        <div class="jumbo-container">
+          <img src="../images/jumbotron3.jpg" class="jumbotron-img" />
+          <div class="hide  text2">
+            <div>
+            <h2><a href="./tourpackages.html">Popular</a></h2>
+            <p>Our customers are happy with our packages. That shows the quality of package, we provide.</p>
+          </div>
+          </div>
+          <div class="jumbo-text">
+            <p>Explore our packages and be ready for your trip</p>
+          </div>
+        </div>
+
+        <div class="jumbo-container">
+          <img src="../images/jumbotron4.jpg" class="jumbotron-img" />
+          <div class="hide  text3">
+            <div>
+            <h2><a href="./gallery.html">Gallery</a></h2>
+            <p>See ous customer's photos and vedios of their trips. That enhance your thrist for trip.</p>
+          </div>
+          </div>
+          <div class="jumbo-text">
+            <p>Get the flavour of our customer's trip</p>
+          </div>
+        </div>
+      </div>
+
+<div>
+  <button class="jumbo-button"><a href="./tourpackages.html">Explore More</a></button>
+</div>
+
+    </div>
+
+<!--footer-->
+<div class="footer">
+  <div>
+    <p>Copyright@WayFar,2022</p>
+  </div>
+
+  <div>
+
+    <ul>
+      <li><a href="../html/contact.html">Contact Us</a></li>
+      <li>|</li>
+      <li><a href="../html/terms.html">Terms & Conditions</a></li>
+      <li>|</li>
+      <li><a href="../html/about.html">About Us</a></li>
+    </ul>
+
+  </div>
+</div>
+
+
+
+  </body>
+</html>
